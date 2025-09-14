@@ -5,7 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
-import lombok.NonNull;
+
 
 import java.time.LocalDate;
 import java.util.UUID;
@@ -19,10 +19,9 @@ public class Patient{
     private UUID id;
 
     private String name;
-    @Email
-    private String Email;
-    private String address;;
-    private LocalDate dataOfBirth;
+    private String email;
+    private String address;
+    private LocalDate dateOfBirth;
     private LocalDate registrationDate;
 
 }
